@@ -1,6 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;900&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +14,23 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.bg-transform-social {
+  background: -webkit-linear-gradient(110deg, rgb(39, 56, 97) 85%, #FFDA2A 85%);
+  background: -o-linear-gradient(110deg, rgb(39, 56, 97) 85%, #FFDA2A 85%);
+  background: -moz-linear-gradient(110deg, rgb(39, 56, 97) 85%, #FFDA2A 85%);
+  background: linear-gradient(110deg, rgb(39, 56, 97) 85%, #FFDA2A 85%);
+}
+.bg-transform-edu {
+  background: -webkit-linear-gradient(110deg, rgb(39, 56, 97) 85%, #8D568F 85%);
+  background: -o-linear-gradient(110deg, rgb(39, 56, 97) 85%, #8D568F 85%);
+  background: -moz-linear-gradient(110deg, rgb(39, 56, 97) 85%, #8D568F 85%);
+  background: linear-gradient(110deg, rgb(39, 56, 97) 85%, #8D568F 85%);
+}
+.bg-transform-personal {
+  background: -webkit-linear-gradient(110deg, rgb(39, 56, 97) 85%, #00A9BB 85%);
+  background: -o-linear-gradient(110deg, rgb(39, 56, 97) 85%, #00A9BB 85%);
+  background: -moz-linear-gradient(110deg, rgb(39, 56, 97) 85%, #00A9BB 85%);
+  background: linear-gradient(110deg, rgb(39, 56, 97) 85%, #00A9BB 85%);
 }

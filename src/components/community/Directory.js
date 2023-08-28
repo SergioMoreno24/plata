@@ -43,7 +43,6 @@ const Directory = ({ tok }) => {
         console.group(data);
         CommunityServices.getFilteredDirectory(tok, data)
         .then(res => {
-            console.log(res.data);
             setAlumnis(res.data.alumnis);
             setLoading(false);
         })
@@ -65,7 +64,7 @@ const Directory = ({ tok }) => {
                         <div>{generations ? <Select name='generation' complementText='una generación' data={ generations } value={generation} foo={ (evt) => { setGeneration(evt.target.value); } }/> : <></>}</div>
                         <div>{states ? <Select name='state' complementText='un estado' data={ states } value={stateA} foo={ (evt) => { setStateA(evt.target.value); } }/> : <></>}</div>
                         <div>{pathways ? <Select name='pathways' complementText='un eje estratégico' data={ pathways } value={pathway} foo={ (evt) => { setPathway(evt.target.value); } }/> : <></>}</div>
-                        <div><InputText type='text' name='name'  placeholder={'Nombre'} value={name} foo={ (evt) => { console.log(name);setName(evt.target.value) } } /></div>
+                        <div><InputText type='text' name='name'  placeholder={'Nombre'} value={name} foo={ (evt) => { setName(evt.target.value) } } /></div>
                     </div>
                     <div className='w-full my-2'><Button1 disabled={false} text='Filtrar' foo={ changeFilters }/></div>
                     {alumnis && alumnis.length > 0 ?
